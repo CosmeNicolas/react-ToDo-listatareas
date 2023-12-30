@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  background-image: radial-gradient(circle 939px at 94.7% 50%, rgb(0, 72, 255) 0%, rgb(86, 47, 200) 76.9%);
+}
+
+.main {
+  flex-grow: 1;
+  font-family: 'Single Day', cursive;
+}
