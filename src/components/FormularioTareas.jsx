@@ -17,7 +17,6 @@ const FormularioTareas = () => {
          onChange={(e)=>setTarea(e.target.value)}
          value={tarea}
          />
-       
       </Form.Group>
       <Button variant="warning" type="submit">
         Enviar
