@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <Container className="main text-center text-light">
+      <Container className="main text-center text-light mt-5">
       <h1>Lista de tareas</h1>
       <FormularioTareas/>
       </Container>

@@ -1,7 +1,10 @@
-import React from 'react'
+import { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
 
 const FormularioTareas = () => {
+  const [tarea, setTarea] = useState('');
+  console.log('desde el input')
+
   return (
    <>
     <Form>
@@ -11,6 +14,8 @@ const FormularioTareas = () => {
          placeholder="ej: Tarea 1"
          minLength={3} 
          maxLength={50}
+         onChange={(e)=>setTarea(e.target.value)}
+         value={tarea}
          />
        
       </Form.Group>
