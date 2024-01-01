@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
+import ListaTareas from './ListaTareas';
 
 const FormularioTareas = () => {
   const [tarea, setTarea] = useState('');
@@ -23,9 +24,7 @@ const FormularioTareas = () => {
         Enviar
       </Button>
     </Form>
-
-
-
+    <ListaTareas/>
    </>
   )
 }
