@@ -4,7 +4,10 @@ import ListaTareas from './ListaTareas';
 
 const FormularioTareas = () => {
   const [tarea, setTarea] = useState('');
-  console.log('desde el input')
+  /* con el hook state , indico el estado que quiero manejar y debo inicializarlo con el dato q voy a trabaja
+  el hook, en componentes de la web nos muestra cual es el estado inicializado */
+  
+  
 
   return (
    <>
@@ -15,7 +18,7 @@ const FormularioTareas = () => {
          placeholder="ej: Tarea 1"
          minLength={3} 
          maxLength={50}
-         onChange={(e)=>setTarea(e.target.value)}
+         onChange={(e)=>{setTarea(e.target.value)}}
          value={tarea}
          />
        
