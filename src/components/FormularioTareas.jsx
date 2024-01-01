@@ -3,9 +3,14 @@ import { Form, Button } from 'react-bootstrap'
 import ListaTareas from './ListaTareas';
 
 const FormularioTareas = () => {
-  const [tarea, setTarea] = useState('');
   /* con el hook state , indico el estado que quiero manejar y debo inicializarlo con el dato q voy a trabaja
   el hook, en componentes de la web nos muestra cual es el estado inicializado */
+  const [tarea, setTarea] = useState('');
+
+  /* con el state "tareas", vamos a guaradar las tareas en un array
+   para luego renderizarlos en la lista
+   */
+  const [tareas, setTareas] = useState([])
   
   
 
