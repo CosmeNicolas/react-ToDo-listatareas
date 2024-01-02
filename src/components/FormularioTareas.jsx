@@ -12,11 +12,22 @@ const FormularioTareas = () => {
    */
   const [tareas, setTareas] = useState([])
   
-  
+  /* agregamos la funcion del evento q quiero manejar con la palabra
+  handle y el nombre del evento ej- handleSubmit */
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+    console.log('desde el evento submit')
+
+    setTareas([...tareas, tarea])
+    //limpiar imput 
+    setTarea('')
+
+  }
 
   return (
    <>
-    <Form>
+   {/* agrego el evento submit que es de los firmularios */}
+    <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>📝 Tareas por Hacer 📝 </Form.Label>
         <Form.Control type="text"
@@ -32,7 +43,7 @@ const FormularioTareas = () => {
         Enviar
       </Button>
     </Form>
-    <ListaTareas/>
+    <ListaTareas tareas={tareas}/>
    </>
   )
 }
