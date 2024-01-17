@@ -36,5 +36,5 @@ Este comando iniciará el servidor de desarrollo proporcionado por Vite.
 
 ### Link Deploy del Proyecto 🥂
 
-- [HelloState](https://hello-state.netlify.app/) 
+- [ListaTareasReactAlert](https://listatareas-react-alert.netlify.app/) 
 
