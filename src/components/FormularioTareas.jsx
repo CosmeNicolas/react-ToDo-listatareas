@@ -13,6 +13,11 @@ const FormularioTareas = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+
+    if(tarea.trim() === ''){
+      alert('Por favor ingresa una tarea')
+      
+    }
     setTareas([...tareas, tarea])
     setTarea('')
   }
